@@ -15,11 +15,7 @@
         return $inputText;
     };
 
-    function validateUsername($un){};
-    function validateFirstname($fn){};
-    function validateLastname($ln){};
-    function validateEmails($em, $em2){};
-    function validatePasswords($pw, $pw2){};
+   
 
     if(isset($_POST['register-button'])){
         //register button was pressed
@@ -31,11 +27,7 @@
         $password = sanitizeFormPassword($_POST['register-password']);
         $confirm_password = sanitizeFormPassword($_POST['register-password2']);
 
-        validateUsername($username);
-        validateFirstname($firstname);
-        validateLastname($lastname);
-        validateEmails($email, $confirm_email);
-        validatePasswords($password, $confirm_password);
+       
     }
 
 ?>
